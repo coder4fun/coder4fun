@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>About Me</title>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+      <%= csrf_meta_tags %>
+    </head>
+    <body>
+    <header>
+        <h3>Panuganti Saikiran</h3>
+    </header>
+    <nav>
+      <h1>Site Navigation</h1>
+      <ui>About Me</ui>
+      <ui>Blog</ui>
+      <ui></ui>
+    </nav>
+    <img border="0" src=<%="images1.jpeg"%> width="304" height="228"/>
+    <section>
+      <article>
+        <h3>Web Blog</h3>
+      </article>
+    </section>
+    <aside>
+      <p>This is my page</p>
+
+    </aside>
+    <footer>
+      <p>Footer</p>
+    </footer>
+    <%=yield%>
+    </body>
+</html>

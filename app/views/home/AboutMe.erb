@@ -1,9 +1,6 @@
 <html>
     <head>
         <title>About Me</title>
-      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-      <%= csrf_meta_tags %>
     </head>
     <body>
     <header>
@@ -15,7 +12,7 @@
       <ui>Blog</ui>
       <ui></ui>
     </nav>
-    <img border="0" src=<%="images1.jpeg"%> width="304" height="228"/>
+    <img src="http://picbook.in/wp-content/uploads/2014/07/happy_diwali__sms_images_.jpg" border="0" width="304" height="228" />
     <section>
       <article>
         <h3>Web Blog</h3>
@@ -23,11 +20,9 @@
     </section>
     <aside>
       <p>This is my page</p>
-
     </aside>
     <footer>
       <p>Footer</p>
     </footer>
-    <%=yield%>
     </body>
 </html>

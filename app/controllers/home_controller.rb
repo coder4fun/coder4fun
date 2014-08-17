@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
-  def AboutMe
+  # @return [Object]
+  def index
   	
   end
 end

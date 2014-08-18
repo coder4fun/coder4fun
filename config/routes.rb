@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'home/AboutMe'
+  get 'home/index'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -55,5 +56,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  root :to => 'home#AboutMe'
+  root :to => 'home#index'
+
+  match '/about' => 'home#about', :via => :get, :as => :about
 end
